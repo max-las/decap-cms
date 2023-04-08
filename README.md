@@ -50,3 +50,13 @@ Please make sure you understand its [implications and guarantees](https://writin
 ## Maintainers
 
 Maintained with care by <a href="https://techhub.p-m.si/">PM</a> & friends.
+
+## Tips
+
+Use Node v16 and Yarn v1
+
+Add dependencies using `npx lerna add <dependency-name> --scope=<local-package-name>`
+
+Build using `yarn build`
+
+Write commit messages according to [Conventional Commits](https://www.conventionalcommits.org/)

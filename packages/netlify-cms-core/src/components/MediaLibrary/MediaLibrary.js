@@ -6,6 +6,7 @@ import { orderBy, map } from 'lodash';
 import { translate } from 'react-polyglot';
 import fuzzy from 'fuzzy';
 import { fileExtension } from 'netlify-cms-lib-util';
+import { optimizeImage } from '@max-las/browser-image-optimizer';
 
 import {
   loadMedia as loadMediaAction,
@@ -174,8 +175,10 @@ class MediaLibrary extends React.Component {
     const { persistMedia, privateUpload, config, t, field } = this.props;
     const { files: fileList } = event.dataTransfer || event.target;
     const files = [...fileList];
-    const file = files[0];
+    let file = files[0];
     const maxFileSize = config.get('max_file_size');
+
+    file = await optimizeImage(file);
 
     if (maxFileSize && file.size > maxFileSize) {
       window.alert(
