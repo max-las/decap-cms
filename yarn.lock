@@ -2509,10 +2509,10 @@
   resolved "https://registry.yarnpkg.com/@mapbox/unitbezier/-/unitbezier-0.0.0.tgz#15651bd553a67b8581fb398810c98ad86a34524e"
   integrity sha1-FWUb1VOme4WB+zmIEMmK2Go0Uk4=
 
-"@max-las/browser-image-optimizer@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@max-las/browser-image-optimizer/-/browser-image-optimizer-0.1.1.tgz#c395bb3a387c72c33c16648c6f634acef98eada3"
-  integrity sha512-HiY4Tp48xLlmmOcOysLKmae42BZhqt+Tj48+qejQNDQjkd9ZlBlhxZygQ1a4VynEg7+t2nTAY4GxROZ2aTXLsQ==
+"@max-las/browser-image-optimizer@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@max-las/browser-image-optimizer/-/browser-image-optimizer-0.1.2.tgz#c40d0e9e466ec2d9568516cc48ddaf3c96112fe2"
+  integrity sha512-pf4oLzk0/WBO0QHGuvCpnP3bo51hWG/8t//ijp1gmZWkLIFVLZh/HYHMGasQ/zCnc7dceLb8eucu2DUpimqz+Q==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"

@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@iarna/toml": "2.2.5",
-    "@max-las/browser-image-optimizer": "^0.1.1",
+    "@max-las/browser-image-optimizer": "^0.1.2",
     "ajv": "8.1.0",
     "ajv-errors": "^3.0.0",
     "ajv-keywords": "^5.0.0",
