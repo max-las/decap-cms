@@ -9,7 +9,7 @@ We run new functionality in an open beta format from time to time. That means th
 
 ## Working with a Local Git Repository
 
-***added in netlify-cms@2.10.17 / netlify-cms-app@2.11.14***
+***added in `netlify-cms@2.10.17` / `netlify-cms-app@2.11.14`***
 
 You can connect Decap CMS to a local Git repository, instead of working with a live repo.
 
@@ -17,11 +17,11 @@ You can connect Decap CMS to a local Git repository, instead of working with a l
 2. Add the top-level property `local_backend` configuration to your `config.yml`:
 
 ```yaml
-backend:
-  name: git-gateway
-
 # when using the default proxy server port
 local_backend: true
+
+backend:
+  name: git-gateway
 ```
 
 3. Run `npx netlify-cms-proxy-server` from the root directory of the above repository.
@@ -55,7 +55,7 @@ local_backend:
 
 ## GitLab and BitBucket Editorial Workflow Support
 
-***added in netlify-cms@2.10.6 / netlify-cms-app@2.11.3***
+***added in `netlify-cms@2.10.6` / `netlify-cms-app@2.11.3`***
 
 You can enable the Editorial Workflow with the following line in your Decap CMS `config.yml` file:
 
@@ -228,6 +228,7 @@ backend:
   # optional, defaults to 'https://gitlab.com/api/graphql'. Can be used to configure a self hosted GitLab instance.
   graphql_api_root: https://my-self-hosted-gitlab.com/api/graphql
 ```
+
 ## Open Authoring
 
 When using the [GitHub backend](/docs/github-backend), you can use Decap CMS to accept contributions from GitHub users without giving them access to your repository. When they make changes in the CMS, the CMS forks your repository for them behind the scenes, and all the changes are made to the fork. When the contributor is ready to submit their changes, they can set their draft as ready for review in the CMS. This triggers a pull request to your repository, which you can merge using the GitHub UI.
@@ -407,7 +408,7 @@ Assuming you have the netlify-cms package installed to your project, manual init
 // This global flag enables manual initialization.
 window.CMS_MANUAL_INIT = true
 // Usage with import from npm package
-import CMS, { init } from 'netlify-cms'
+import CMS, { init } from 'netlify-cms-app'
 // Usage with script tag
 const { CMS, initCMS: init } = window
 /**
@@ -472,7 +473,7 @@ CMS.registerPreviewTemplate(...);
  * Assumes a webpack project with `sass-loader` and `css-loader` installed.
  * Takes advantage of the `toString` method in the return value of `css-loader`.
  */
-import CMS from 'netlify-cms';
+import CMS from 'netlify-cms-app';
 import styles from '!css-loader!sass-loader!../main.scss';
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 ```

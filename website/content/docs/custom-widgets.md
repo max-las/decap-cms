@@ -3,7 +3,7 @@ group: Fields
 weight: 20
 title: Creating Custom Widgets
 ---
-The NetlifyCMS exposes a `window.CMS` a global object that you can use to register custom widgets, previews, and editor plugins. The same object is also the default export if you import Decap CMS as an npm module. The available widget extension methods are:
+Decap CMS exposes a `window.CMS` global object that you can use to register custom widgets, previews, and editor plugins. The same object is also the default export if you import Decap CMS as an npm module. The available widget extension methods are:
 
 * **registerWidget:** registers a custom widget.
 * **registerEditorComponent:** adds a block component to the Markdown editor.
@@ -23,7 +23,7 @@ Register a custom widget.
 CMS.registerWidget(name, control, [preview], [schema]);
 
 // Using npm module import
-import CMS from 'netlify-cms';
+import CMS from 'netlify-cms-app';
 CMS.registerWidget(name, control, [preview], [schema]);
 ```
 
@@ -190,7 +190,7 @@ CMS.registerEditorComponent({
 
 **Result:**
 
-![youtube-widget](/img/screen shot 2018-01-05 at 4.25.07 pm.png)
+![youtube-widget](/img/img/screen%20shot%202018-01-05%20at%204.25.07%20pm.png)
 
 ## Advanced field validation
 
@@ -474,7 +474,7 @@ window.CMS_MANUAL_INIT = true
 
 ```javascript
 import './bootstrap.js'
-import CMS, { init } from 'netlify-cms'
+import CMS, { init } from 'netlify-cms-app'
 import 'netlify-cms/dist/cms.css'
 import { Control, Preview } from '../src'
 
