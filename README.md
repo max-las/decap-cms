@@ -55,7 +55,7 @@ Maintained with care by <a href="https://techhub.p-m.si/">PM</a> & friends.
 
 Use Node v16 and Yarn v1
 
-Add dependencies using `npx lerna add <dependency-name> --scope=<local-package-name>`
+Add dependencies using `yarn workspace <local-package-name> add <dependency-name>`
 
 Build using `yarn build`
 
